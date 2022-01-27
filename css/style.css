@@ -273,6 +273,11 @@
 	font-size: 24px;
 	transition: 0.3s;
 }
+.nav a {
+	width: 200px;
+	font-size: 22px;
+	transition: 0.3s;
+}
 .headers {
 	top: 0;
 	left: 0;
