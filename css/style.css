@@ -7,8 +7,8 @@
   position: absolute;
   left: 10px;
   top: 10px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
 }
 .burger span, .burger span:before, .burger span:after{
@@ -24,7 +24,7 @@
 
 .burger span:before{
   content: "";
-  top: -20px;
+  top: -12px;
   transition: top 200ms 200ms, transform 200ms cubic-bezier(0.23, 1);
 
 }
@@ -33,7 +33,7 @@
 }
 .burger span:after{
   content: "";
-  bottom: -20px;
+  bottom: -12px;
   transition: bottom 200ms 200ms, transform 200ms cubic-bezier(0.23, 1);
  
 
