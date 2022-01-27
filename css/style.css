@@ -27,7 +27,7 @@
 
 .burger span:before{
   content: "";
-  top: -12px;
+  top: -15px;
   transition: top 200ms 200ms, transform 200ms cubic-bezier(0.23, 1);
 
 }
@@ -36,7 +36,7 @@
 }
 .burger span:after{
   content: "";
-  bottom: -12px;
+  bottom: -15px;
   transition: bottom 200ms 200ms, transform 200ms cubic-bezier(0.23, 1);
  
 
@@ -150,6 +150,7 @@
   p {
   	font-size: 20px;
   }
+
   .headers {
   	height: 120px;
   }
@@ -179,6 +180,14 @@
   .burger {
   	top: 40px;
   	left: 40px;
+  	width: 70px;
+  	height: 70px;
+  }
+  .burger span:before {
+  	top: -20px;
+  }
+  .burger span:after {
+  	bottom: -20px;
   }
   .content {
   	margin-top: 120px;
@@ -192,7 +201,7 @@
   	height: 120px;
   }
   .headers h1 {
-  	font-size: 40px;
+  	font-size: 50px;
   	line-height: 120px;
 
   }
@@ -215,10 +224,18 @@
   .burger {
   	top: 40px;
   	left: 40px;
+  	width: 70px;
+  	height: 70px;
   }
   .content {
 	margin-top: 120px;
 }
+.burger span:before {
+  	top: -20px;
+  }
+  .burger span:after {
+  	bottom: -20px;
+  }
 }
 
 
