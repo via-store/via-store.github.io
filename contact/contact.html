@@ -3,25 +3,34 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Контакты</title>
-	<link rel=”icon” href=”../logo.png” type=”image/x-icon”>
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-	<header class="head">
-		<div class="logo"></div>
-		<div class="head_block">
-			<h1>Via-store</h1>
-
-		<nav class="head_nav">
-			<ul class="navbar">
+	<header>
+		<div class="burger">
+			<span></span>
+		</div>
+		<div class="headers">
+			<h1>Контакты</h1>
+			<h2>Via-shop</h2>
+			<div class="bottom">
+				
+			</div>
+		</div>
+		<div class="menu">
+			<ul class="nav">
 			<li><a href="../index.html">Главная</a></li>
 			<li><a href="../aboutus/aboutus.html">О нас</a></li>
 			<li><a href="../product/product.html">Товар</a></li>
-			<li><a class="active" href="../contact/contact.html">Контакты</a></li>
-
 			</ul>
-		</nav>
 		</div>
+		<script>
+			document.querySelector('.burger').addEventListener('click', function(){
+  			document.querySelector('.burger span').classList.toggle('active');
+  			document.querySelector('.menu').classList.toggle("animate");
+			})
+		</script>
+
 	</header>
 	
 </body>
