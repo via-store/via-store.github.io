@@ -3,6 +3,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+.wrapper {
+	min-width: 400px;
+}
 .burger{
   position: absolute;
   left: 10px;
@@ -95,7 +98,7 @@
 	letter-spacing: 5px;
 }
 .headers {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -105,7 +108,7 @@
 	-moz-box-shadow: 0px 4px 8px -3px rgba(34, 60, 80, 0.39);
 	box-shadow: 0px 4px 8px -3px rgba(34, 60, 80, 0.39);
 }
-a:hover {
+.nav a:hover {
 	
 	font-size: 24px;
 	transition: 0.3s;
@@ -139,3 +142,83 @@ a:hover {
 	background: green;
 
 }
+.content {
+	border: 1px solid black;
+	margin-top: 70px;
+}
+@media (min-width: 750px) and (max-width: 1000px) {
+  p {
+  	font-size: 20px;
+  }
+  .headers {
+  	height: 120px;
+  }
+  .headers h1 {
+  	font-size: 50px;
+  	line-height: 120px;
+
+  }
+  .headers h2 {
+  	font-size: 40px;
+  	top: 43px;
+  }
+  .nav a {
+  	font-size: 34px;
+  }
+  .nav a:hover {
+	width: 500px;
+	font-size: 45px;
+	transition: 0.3s;
+	color: white;
+	background: rgb(85, 50, 200);
+}
+  .bottom {
+  	top: 80px;
+  	width: 115px;
+  }
+  .burger {
+  	top: 40px;
+  	left: 40px;
+  }
+  .content {
+  	margin-top: 120px;
+  }
+}
+@media (max-width: 750px) {
+	  p {
+  	font-size: 12px;
+  }
+  .headers {
+  	height: 120px;
+  }
+  .headers h1 {
+  	font-size: 40px;
+  	line-height: 120px;
+
+  }
+  .headers h2 {
+  	opacity: 0;
+  }
+  .nav a {
+  	font-size: 34px;
+  }
+  .nav a:hover {
+	width: 500px;
+	font-size: 45px;
+	transition: 0.3s;
+	color: white;
+	background: rgb(85, 50, 200);
+}
+  .bottom {
+  	opacity: 0;
+  }
+  .burger {
+  	top: 40px;
+  	left: 40px;
+  }
+  .content {
+	margin-top: 120px;
+}
+}
+
+
